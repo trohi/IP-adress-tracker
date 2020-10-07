@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "leaflet": "^1.7.1",
+    "node-fetch": "^2.6.1",
     "vue": "^2.6.11",
     "vue2-leaflet": "^2.5.2",
     "vuetify": "^2.2.11"
