@@ -5,7 +5,7 @@
         <h1>IP Address Tracker</h1>
       </div>
       <div class="flex2">
-        <input type="text" placeholder="Search for any IP address or domain" v-model="input">
+        <input type="text" placeholder="Search for any IP address or domain"  v-model="input">
         <img class="arrowImg" src="../assets/icon-arrow.svg" @click="getData">
       </div>
     </div>
@@ -54,7 +54,7 @@
       return {
         lat:'47.413220',
         lng:'-1.129482',
-        input:'8.8.8.8',
+        input:'',
         api_key:'at_jdwrNK6tuc3RR74pjYaKMY4wDotYM',
         city:'',
         region:'',
