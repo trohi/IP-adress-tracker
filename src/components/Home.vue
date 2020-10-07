@@ -145,7 +145,6 @@
 }
 
 input{
-  /*width:400px !important;*/
   width:100%;
   padding-left:50px;
   height:50px;
@@ -155,7 +154,8 @@ input{
 
 .arrowImg{
   scale:1;
-  margin-right:-30px;
+  margin-right:-8%;
+  margin-left:4%;
   cursor:pointer
 }
 
@@ -177,7 +177,8 @@ input{
   margin-right:auto;
   margin-top:3%;
   max-width:150px;
-  font-size:12px;
+  font-size:14px;
+  letter-spacing: 2px;
   font-weight: bold;
   color:hsl(0, 0%, 63%)
 }
@@ -186,6 +187,7 @@ input{
   font-size:18px !important;
   color:black !important;
   margin-top:5px;
+  letter-spacing: initial
 }
 
 hr{
