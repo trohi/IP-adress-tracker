@@ -167,7 +167,7 @@ input{
   margin-right:35%;
   margin-top:-50px;
   min-height:18vh;
-  max-height: 22vh;
+  max-height: 100vh;
   width:70%;
   background-color:white;
   border-radius:10px;
