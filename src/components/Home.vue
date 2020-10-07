@@ -213,6 +213,11 @@ hr{
     width:90% !important
   }
 
+  #map{
+    height: auto;
+    width:auto;
+}
+
   input{
     margin-left:-40px;
     width: 110%
