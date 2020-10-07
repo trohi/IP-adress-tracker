@@ -5,7 +5,7 @@
         <h1>IP Address Tracker</h1>
       </div>
       <div class="flex2">
-        <input type="text" placeholder="Search for any IP address or domain"  v-model="input">
+        <input type="text" placeholder="Search for any IP address or domain"  :value="input">
         <img class="arrowImg" src="../assets/icon-arrow.svg" @click="getData">
       </div>
     </div>
@@ -52,15 +52,15 @@
     name: 'Home',
     data(){
       return {
-        lat:'47.413220',
-        lng:'-1.129482',
-        input:'',
+        lat:'34.0614',
+        lng:'-118.08162',
+        input:'192.212.174.101',
         api_key:'at_jdwrNK6tuc3RR74pjYaKMY4wDotYM',
-        city:'',
-        region:'',
-        postalCode:'',
-        timeZone:'',
-        isp:''
+        city:'Rosemead (Garvey)',
+        region:'California',
+        postalCode:'91770',
+        timeZone:'UTC-07:00',
+        isp:'SpaceX Starlink'
       }
     },
     components:{
@@ -166,7 +166,8 @@ input{
   margin-left:17%;
   margin-right:35%;
   margin-top:-50px;
-  height:18vh;
+  min-height:18vh;
+  max-height: 22vh;
   width:70%;
   background-color:white;
   border-radius:10px;
