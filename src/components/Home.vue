@@ -5,7 +5,7 @@
         <h1>IP Address Tracker</h1>
       </div>
       <div class="flex2">
-        <input type="text" placeholder="Search for any IP address or domain" v-bind="input">
+        <input type="text" placeholder="Search for any IP address or domain" v-model="input">
         <img class="arrowImg" src="../assets/icon-arrow.svg" @click="getData">
       </div>
     </div>
@@ -14,17 +14,20 @@
         IP ADDRESS
         <p>{{this.input}}</p>
       </div>
-      <v-divider vertical></v-divider>
+      <v-divider vertical class="hidden-sm-and-down"></v-divider>
+      <v-divider class="hidden-sm-and-up"></v-divider>
       <div>
         LOCATION
         <p>{{this.city}} {{this.region}} {{this.postalCode}}</p>
         </div>
-        <v-divider vertical></v-divider>
+        <v-divider vertical class="hidden-sm-and-down"></v-divider>
+        <v-divider class="hidden-sm-and-up"></v-divider>
       <div>
         TIMEZONE
         <p>{{this.timeZone}}</p>
         </div>
-        <v-divider vertical></v-divider>
+        <v-divider vertical class="hidden-sm-and-down"></v-divider>
+        <v-divider class="hidden-sm-and-up"></v-divider>
       <div>
         ISP
         <p>{{this.isp}}</p>
@@ -134,6 +137,7 @@
 }
 
 .flex2{
+  width:400px;
   margin-bottom:auto;
   border-radius:15px !important;
   background-color:White !important;
@@ -141,7 +145,8 @@
 }
 
 input{
-  width:400px !important;
+  /*width:400px !important;*/
+  width:100%;
   padding-left:50px;
   height:50px;
   margin-left:auto;
@@ -198,6 +203,36 @@ hr{
 
 .marker{
   scale:2
+}
+
+@media only screen and (max-width: 385px){
+  .flex2{
+    width:90% !important
+  }
+
+  input{
+    margin-left:-40px;
+    width: 110%
+  }
+
+  .arrowImg{
+    position:absolute;
+    margin-top:5%;
+    margin-right:0px;
+    margin-left:8%
+  }
+
+  .centralWrapper{
+    flex-direction: column;
+    margin-top:-30%;
+    height:auto
+  }
+
+  .centralWrapper div{
+    height:auto;
+    text-align: center;
+    max-width:200px
+  }
 }
 
 </style>
