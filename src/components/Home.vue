@@ -214,7 +214,7 @@ hr{
   }
 
   #map{
-    height: auto;
+    height: 64vh;
     width:auto;
 }
 
