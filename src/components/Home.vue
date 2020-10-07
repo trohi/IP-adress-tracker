@@ -5,7 +5,7 @@
         <h1>IP Address Tracker</h1>
       </div>
       <div class="flex2">
-        <input type="text" placeholder="Search for any IP address or domain" v-model="input">
+        <input type="text" placeholder="Search for any IP address or domain" v-bind="input">
         <img class="arrowImg" src="../assets/icon-arrow.svg" @click="getData">
       </div>
     </div>
